@@ -25,6 +25,8 @@ function Get-AnchorID($text) {
 # LCS: Import the specified module to ensure we have access to all its commands
 Import-Module $ModuleName -Force
 
+Install-module -name $ModuleName -force
+
 # LCS: Retrieve module information
 $module = Get-Module $ModuleName
 
